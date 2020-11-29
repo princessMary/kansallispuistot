@@ -5,8 +5,8 @@
     <script src="http://d3js.org/topojson.v1.min.js"></script>
     <script src="https://datamaps.github.io/scripts/datamaps.world.min.js"></script>
     <h1>Kansallispuistot </h1>
-    <p><a href ="https://www.metsa.fi/maat-ja-vedet/suojelualueet/kansallispuistot/kansallispuistotaulukot/"> Kansallispuistot</a> koon ja perustamisvuoden mukaan</p>
-    <p><a href ="https://www.metsa.fi/maat-ja-vedet/suojelualueet/kansallispuistot/kansallispuistotaulukot/"> source code</a> </p>
+    <p><a href ="https://www.metsa.fi/maat-ja-vedet/suojelualueet/kansallispuistot/kansallispuistotaulukot/"> Kansallispuistot</a> koon ja petumvihtamisvuoden mukaan</p>
+    <p><a href ="https://princessmary.github.io/kansallispuistot"> Koodi :D </a> </p>
     <div id="container" style="position: relative; width: 800px; height: 650px;"></div>
     <script>
       var map = new Datamap({
@@ -28,14 +28,14 @@
     return {path: path, projection: projection};
   },
   fills: {
-      'USA': 'green',
-      'RUS': 'darkgreen',
-      'PRK': 'powderblue',
-      'PRC': 'forestgreen',
+      'vih': 'green',
+      'tumvih': 'darkgreen',
+      'sin': 'powderblue',
+      'metsa': 'forestgreen',
       defaultFill: 'mistyrose'
   },
   data: {
-      'FIN': {fillKey: 'PRK'},
+      'FIN': {fillKey: 'sin'},
   }
   });
 
@@ -45,7 +45,7 @@ var puistot = [
       radius: 5,
       koko: 16,
       vuosi: "2014",
-      fillKey: 'USA',
+      fillKey: 'vih',
       latitude: 62.33,
       longitude: 26.38
     },
@@ -54,7 +54,7 @@ var puistot = [
       radius: 6,
       koko: 50,
       vuosi: "1983",
-      fillKey: 'PRC',
+      fillKey: 'metsa',
       latitude: 62.02,
       longitude: 23.51
     },
@@ -63,7 +63,7 @@ var puistot = [
       radius: 6,
       koko: 45,
       vuosi: "1982",
-      fillKey: 'PRC',
+      fillKey: 'metsa',
       latitude: 63.52,
       longitude: 29.03
     },
@@ -72,7 +72,7 @@ var puistot = [
       radius: 11,
       koko: 110,
       vuosi: "2017",
-      fillKey: 'USA',
+      fillKey: 'vih',
       latitude: 65.442,
       longitude: 29.555
     },
@@ -81,7 +81,7 @@ var puistot = [
       radius: 5,
       koko: 22,
       vuosi: "1982",
-      fillKey: 'PRC',
+      fillKey: 'metsa',
       latitude: 61.41,
       longitude: 25.00
     },
@@ -90,7 +90,7 @@ var puistot = [
       radius: 5,
       koko: 7,
       vuosi: "1982",
-      fillKey: 'PRC',
+      fillKey: 'metsa',
       latitude: 60.15,
       longitude: 27.10
     },
@@ -99,7 +99,7 @@ var puistot = [
       radius: 7,
       koko: 57,
       vuosi: "1982",
-      fillKey: 'PRC',
+      fillKey: 'metsa',
       latitude: 62.11,
       longitude: 22.24
     },
@@ -108,7 +108,7 @@ var puistot = [
       radius: 7,
       koko: 30,
       vuosi: "1991",
-      fillKey: 'PRC',
+      fillKey: 'metsa',
       latitude: 63.05,
       longitude: 29.48
     },
@@ -117,7 +117,7 @@ var puistot = [
       radius: 7,
       koko: 60,
       vuosi: "1990",
-      fillKey: 'PRC',
+      fillKey: 'metsa',
       latitude: 62.14,
       longitude: 28.50
     },
@@ -126,7 +126,7 @@ var puistot = [
       radius: 6,
       koko: 29,
       vuosi: "1998",
-      fillKey: 'PRC',
+      fillKey: 'metsa',
       latitude: 60.43,
       longitude: 22.24
     },
@@ -135,7 +135,7 @@ var puistot = [
       radius: 6,
       koko: 53,
       vuosi: "1982",
-      fillKey: 'PRC',
+      fillKey: 'metsa',
       latitude: 62.09,
       longitude: 22.10
     },
@@ -144,7 +144,7 @@ var puistot = [
       radius: 7,
       koko: 31,
       vuosi: "2003",
-      fillKey: 'USA',
+      fillKey: 'vih',
       latitude: 61.54,
       longitude: 26.07
     },
@@ -153,7 +153,7 @@ var puistot = [
       radius: 20,
       koko: 2860,
       vuosi: "1956",
-      fillKey: 'RUS',
+      fillKey: 'tumvih',
       latitude: 68.45,
       longitude: 26.13
     },
@@ -162,7 +162,7 @@ var puistot = [
       radius: 6,
       koko: 22,
       vuosi: "1956",
-      fillKey: 'RUS',
+      fillKey: 'tumvih',
       latitude: 60.40,
       longitude: 23.51
     },
@@ -171,7 +171,7 @@ var puistot = [
       radius: 9,
       koko: 97,
       vuosi: "1956",
-      fillKey: 'RUS',
+      fillKey: 'tumvih',
       latitude: 62.06,
       longitude: 28.31
     },
@@ -180,7 +180,7 @@ var puistot = [
       radius: 7,
       koko: 55,
       vuosi: "1994",
-      fillKey: 'PRC',
+      fillKey: 'metsa',
       latitude: 60.15,
       longitude: 24.36
     },
@@ -189,7 +189,7 @@ var puistot = [
       radius: 15,
       koko: 290,
       vuosi: "1956",
-      fillKey: 'RUS',
+      fillKey: 'tumvih',
       latitude: 66.09,
       longitude: 30.38
     },
@@ -198,7 +198,7 @@ var puistot = [
       radius: 5,
       koko: 14,
       vuosi: "1993",
-      fillKey: 'PRC',
+      fillKey: 'metsa',
       latitude: 61.36,
       longitude: 25.28
     },
@@ -207,7 +207,7 @@ var puistot = [
       radius: 16,
       koko: 1020,
       vuosi: "2005",
-      fillKey: 'USA',
+      fillKey: 'vih',
       latitude: 68.07,
       longitude: 24.05
     },
@@ -216,7 +216,7 @@ var puistot = [
       radius: 9,
       koko: 105,
       vuosi: "1982",
-      fillKey: 'PRC',
+      fillKey: 'metsa',
       latitude: 63.06,
       longitude: 30.42
     },
@@ -225,7 +225,7 @@ var puistot = [
       radius: 10,
       koko: 157,
       vuosi: "1991",
-      fillKey: 'PRC',
+      fillKey: 'metsa',
       latitude: 65.37,
       longitude: 24.19
     },
@@ -234,7 +234,7 @@ var puistot = [
       radius: 5,
       koko: 6,
       vuosi: "1956",
-      fillKey: 'RUS',
+      fillKey: 'tumvih',
       latitude: 62.35,
       longitude: 31.11
     },
@@ -243,7 +243,7 @@ var puistot = [
       radius: 6,
       koko: 27,
       vuosi: "1993",
-      fillKey: 'PRC',
+      fillKey: 'metsa',
       latitude: 61.14,
       longitude: 22.34
     },
@@ -252,7 +252,7 @@ var puistot = [
       radius: 5,
       koko: 13,
       vuosi: "1956",
-      fillKey: 'RUS',
+      fillKey: 'tumvih',
       latitude: 62.50,
       longitude: 25.28
     },
@@ -261,7 +261,7 @@ var puistot = [
       radius: 13,
       koko: 142,
       vuosi: "2005",
-      fillKey: 'USA',
+      fillKey: 'vih',
       latitude: 67.03,
       longitude: 25.28
     },
@@ -270,7 +270,7 @@ var puistot = [
       radius: 5,
       koko: 15,
       vuosi: "2003",
-      fillKey: 'USA',
+      fillKey: 'vih',
       latitude: 61.11,
       longitude: 26.53
     },
@@ -279,7 +279,7 @@ var puistot = [
       radius: 8,
       koko: 77,
       vuosi: "1982",
-      fillKey: 'PRC',
+      fillKey: 'metsa',
       latitude: 66.14,
       longitude: 28.30
     },
@@ -288,7 +288,7 @@ var puistot = [
       radius: 5,
       koko: 9,
       vuosi: "1956",
-      fillKey: 'RUS',
+      fillKey: 'tumvih',
       latitude: 64.33,
       longitude: 26.30
     },
@@ -297,7 +297,7 @@ var puistot = [
       radius: 16,
       koko: 500,
       vuosi: "1983",
-      fillKey: 'PRC',
+      fillKey: 'metsa',
       latitude: 59.55,
       longitude: 21.42
     },
@@ -306,7 +306,7 @@ var puistot = [
       radius: 7,
       koko: 65,
       vuosi: "1982",
-      fillKey: 'PRC',
+      fillKey: 'metsa',
       latitude: 63.16,
       longitude: 24.45
     },
@@ -315,7 +315,7 @@ var puistot = [
       radius: 6,
       koko: 46,
       vuosi: "1982",
-      fillKey: 'PRC',
+      fillKey: 'metsa',
       latitude: 61.58,
       longitude: 23.36
     },
@@ -324,7 +324,7 @@ var puistot = [
       radius: 17,
       koko: 940,
       vuosi: "2011",
-      fillKey: 'USA',
+      fillKey: 'vih',
       latitude: 61.53,
       longitude: 21.56
     },
@@ -333,7 +333,7 @@ var puistot = [
       radius: 5,
       koko: 19,
       vuosi: "2011",
-      fillKey: 'USA',
+      fillKey: 'vih',
       latitude: 60.18,
       longitude: 25.13
     },
@@ -342,7 +342,7 @@ var puistot = [
       radius: 14,
       koko: 299,
       vuosi: "2000",
-      fillKey: 'USA',
+      fillKey: 'vih',
       latitude: 65.42,
       longitude: 27.34
     },
@@ -351,7 +351,7 @@ var puistot = [
       radius: 6,
       koko: 52,
       vuosi: "1989",
-      fillKey: 'PRC',
+      fillKey: 'metsa',
       latitude: 59.48,
       longitude: 23.34
     },
@@ -360,7 +360,7 @@ var puistot = [
       radius: 5,
       koko: 34,
       vuosi: "2015",
-      fillKey: 'USA',
+      fillKey: 'vih',
       latitude: 60.13,
       longitude: 22.57
     },
@@ -369,7 +369,7 @@ var puistot = [
       radius: 5,
       koko: 34,
       vuosi: "1982",
-      fillKey: 'PRC',
+      fillKey: 'metsa',
       latitude: 63.40,
       longitude: 28.18
     },
@@ -378,7 +378,7 @@ var puistot = [
       radius: 5,
       koko: 30,
       vuosi: "1990",
-      fillKey: 'PRC',
+      fillKey: 'metsa',
       latitude: 60.73,
       longitude: 23.65
     },
@@ -387,16 +387,16 @@ var puistot = [
       radius: 19,
       koko: 2550,
       vuosi: "1983",
-      fillKey: 'PRC',
+      fillKey: 'metsa',
       latitude: 68.20,
       longitude: 28.00
     },
     {
-      name: 'Valkmusa',
+      name: 'Valkmvih',
       radius: 5,
       koko: 19,
       vuosi: "1996",
-      fillKey: 'PRC',
+      fillKey: 'metsa',
       latitude: 60.34,
       longitude: 26.44
     },
@@ -408,7 +408,7 @@ map.bubbles(puistot, {
   popupTemplate: function (geo, data) {
           return ['<div class="hoverinfo">' +  data.name,
           '<br/>Koko: ' +  data.koko + ' km² ',
-          '<br/>Perustamisvuosi: ' +  data.vuosi + '',
+          '<br/>Petumvihtamisvuosi: ' +  data.vuosi + '',
           '</div>'].join('');
   }
 });
